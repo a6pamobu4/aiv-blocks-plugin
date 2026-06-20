@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "aiv/cta",
+	"version": "0.1.0",
+	"title": "AIV CTA",
+	"category": "aiv-blocks",
+	"description": "A simple call to action section.",
+	"textdomain": "aiv-blocks",
+	"attributes": {
+		"title": { "type": "string", "default": "" },
+		"text": { "type": "string", "default": "" },
+		"buttonText": { "type": "string", "default": "" },
+		"buttonUrl": { "type": "string", "default": "" },
+		"variant": { "type": "string", "default": "default" }
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"margin": [ "top", "bottom" ],
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:../style-cta.css",
+	"editorStyle": "file:../cta.css"
+}

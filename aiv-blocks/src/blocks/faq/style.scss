@@ -1,0 +1,25 @@
+.aiv-faq {
+	padding-block: var(--wp--preset--spacing--70, 4rem);
+}
+
+.aiv-faq__inner {
+	margin-inline: auto;
+	max-width: var(--wp--style--global--content-size, 760px);
+}
+
+.aiv-faq__heading {
+	margin-block-start: 0;
+}
+
+.aiv-faq__items {
+	display: grid;
+	gap: 1rem;
+}
+
+.aiv-faq__question {
+	cursor: pointer;
+}
+
+.aiv-faq__answer {
+	margin-block-start: 0.75rem;
+}

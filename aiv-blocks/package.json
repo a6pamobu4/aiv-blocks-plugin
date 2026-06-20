@@ -1,0 +1,26 @@
+{
+	"name": "aiv-blocks",
+	"version": "0.1.0",
+	"description": "Reusable Gutenberg blocks for custom AIV-web WordPress projects.",
+	"author": "AIV-web",
+	"license": "GPL-2.0-or-later",
+	"private": true,
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"lint:js": "wp-scripts lint-js \"src/**/*.js\"",
+		"format": "wp-scripts format \"src/**/*.{js,scss,json}\" \"*.{js,json,md}\""
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.18.0"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^14.18.0",
+		"@wordpress/blocks": "^14.12.0",
+		"@wordpress/components": "^29.8.0",
+		"@wordpress/i18n": "^5.12.0"
+	},
+	"browserslist": [
+		"extends @wordpress/browserslist-config"
+	]
+}
