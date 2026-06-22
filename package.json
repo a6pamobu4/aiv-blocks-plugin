@@ -12,13 +12,11 @@
 		"format": "wp-scripts format \"src/**/*.{js,scss,json}\" \"*.{js,json,md}\""
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.18.0"
-	},
-	"dependencies": {
 		"@wordpress/block-editor": "^14.18.0",
 		"@wordpress/blocks": "^14.12.0",
 		"@wordpress/components": "^29.8.0",
-		"@wordpress/i18n": "^5.12.0"
+		"@wordpress/i18n": "^5.12.0",
+		"@wordpress/scripts": "^30.18.0"
 	},
 	"browserslist": [
 		"extends @wordpress/browserslist-config"

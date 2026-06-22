@@ -33,8 +33,8 @@ function aiv_blocks_get_block_directories(): array {
 /**
  * Sanitizes an attribute intended for use as a CSS class suffix.
  *
- * @param string $value Attribute value.
- * @param string $fallback Fallback value.
+ * @param string   $value Attribute value.
+ * @param string   $fallback Fallback value.
  * @param string[] $allowed Allowed values.
  * @return string
  */
