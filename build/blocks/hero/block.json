@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aiv/hero",
+  "version": "0.1.0",
+  "title": "AIV Hero",
+  "category": "aiv-blocks",
+  "description": "A reusable landing page hero with optional media and actions.",
+  "textdomain": "aiv-blocks",
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    },
+    "primaryButtonText": {
+      "type": "string",
+      "default": ""
+    },
+    "primaryButtonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "secondaryButtonText": {
+      "type": "string",
+      "default": ""
+    },
+    "secondaryButtonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mediaId": {
+      "type": "number"
+    },
+    "mediaUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mediaAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "variant": {
+      "type": "string",
+      "default": "simple"
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css"
+}

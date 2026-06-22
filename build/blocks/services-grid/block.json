@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aiv/services-grid",
+  "version": "0.1.0",
+  "title": "AIV Services Grid",
+  "category": "aiv-blocks",
+  "description": "A simple services grid with editable service items.",
+  "textdomain": "aiv-blocks",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": ""
+    },
+    "intro": {
+      "type": "string",
+      "default": ""
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Service title",
+          "text": "Short service description.",
+          "link": ""
+        },
+        {
+          "title": "Service title",
+          "text": "Short service description.",
+          "link": ""
+        },
+        {
+          "title": "Service title",
+          "text": "Short service description.",
+          "link": ""
+        }
+      ]
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css"
+}

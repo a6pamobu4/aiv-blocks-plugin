@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aiv/pricing-cards",
+  "version": "0.1.0",
+  "title": "AIV Pricing Cards",
+  "category": "aiv-blocks",
+  "description": "Accessible pricing plan cards with feature lists.",
+  "textdomain": "aiv-blocks",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": ""
+    },
+    "intro": {
+      "type": "string",
+      "default": ""
+    },
+    "plans": {
+      "type": "array",
+      "default": [
+        {
+          "name": "Plan name",
+          "price": "$99",
+          "description": "Short plan description.",
+          "features": [
+            "Feature one",
+            "Feature two",
+            "Feature three"
+          ],
+          "buttonText": "Get started",
+          "buttonUrl": "",
+          "highlighted": false
+        },
+        {
+          "name": "Plan name",
+          "price": "$199",
+          "description": "Short plan description.",
+          "features": [
+            "Feature one",
+            "Feature two",
+            "Feature three"
+          ],
+          "buttonText": "Get started",
+          "buttonUrl": "",
+          "highlighted": true
+        }
+      ]
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css"
+}
